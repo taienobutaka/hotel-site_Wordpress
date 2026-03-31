@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/shippori-mincho/VdGGAZweH5EbgHY6YExcZfDoj0BA2w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/shippori-mincho/VdGDAZweH5EbgHY6YExcZfDoj0B4L9am5A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/shippori-mincho/VdGDAZweH5EbgHY6YExcZfDoj0B4A9Gm5A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/shippori-mincho/VdGDAZweH5EbgHY6YExcZfDoj0B4Z9Cm5A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/fonts/shippori-mincho/VdGDAZweH5EbgHY6YExcZfDoj0B4e9Om5A.ttf) format('truetype');
+}

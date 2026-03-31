@@ -1,0 +1,848 @@
+/* ===========================
+   INDEX PAGE STYLES
+   =========================== */
+
+/* Fixed Reservation Button */
+#fixed-reservation-btn {
+  opacity: 1;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out;
+  will-change: opacity, transform;
+  bottom: 32px !important;
+}
+
+/* Scroll Fade-in for images */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-fade.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Initial access overlay */
+.intro-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5efea;
+  opacity: 1;
+  transition: opacity 6s ease;
+  will-change: opacity;
+  pointer-events: none;
+}
+
+.intro-overlay.is-hidden {
+  opacity: 0;
+}
+
+.intro-logo {
+  width: 140px;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .intro-logo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: 753px;
+    align-items: flex-start;
+  }
+
+  .intro-logo {
+    position: absolute;
+    top: 332px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Hero text fade-out when video appears */
+.hero-text {
+  opacity: 0;
+  transition: opacity 2.4s ease;
+  will-change: opacity;
+}
+
+.hero-text.is-visible {
+  opacity: 1;
+}
+
+.hero-text.is-fading {
+  opacity: 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  section.relative.h-\[828px\] {
+    height: 475px;
+  }
+
+  section.relative.h-\[828px\] h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  section.relative.h-\[828px\] p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  section.bg-\[\#F5EFEA\].py-\[150px\].px-\[256px\] {
+    padding: 100px 16px;
+  }
+
+  section.bg-\[\#F5EFEA\] .px-\[183px\] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.bg-\[\#F5EFEA\] h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  section.bg-\[\#F5EFEA\] .space-y-\[38px\] p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  section.h-\[501px\] {
+    height: 192px;
+  }
+
+  .flex.items-center.gap-\[80px\] {
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+  }
+
+  .sp-services {
+    width: 100%;
+  }
+
+  .sp-services-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sp-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .sp-service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .sp-service-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .w-\[368px\],
+  .w-\[332px\] {
+    width: 100%;
+    max-width: 343px;
+  }
+
+  .w-\[800px\] {
+    width: 100%;
+    max-width: 343px;
+    height: 214px;
+  }
+
+  section.bg-\[\#F5EFEA\].pb-\[150px\] .relative.h-\[665px\] {
+    height: 475px;
+  }
+
+  .absolute.bottom-\[110px\].left-\[104px\] {
+    bottom: 16px;
+    left: 16px;
+    width: calc(100% - 32px);
+  }
+
+  .max-w-\[892px\] {
+    max-width: 343px;
+  }
+
+  .max-w-\[672px\] {
+    max-width: 343px;
+  }
+}
+
+/* ===========================
+   ROOMS PAGE STYLES
+   =========================== */
+
+.rooms-kv-bg {
+  background-image: url(../images/rooms/rooms-kv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rooms-cover-bg {
+  background-image: url(../images/rooms/rooms-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-1-img {
+  background-image: url(../images/rooms/feature-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-2-img {
+  background-image: url(../images/rooms/feature-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-3-img {
+  background-image: url(../images/rooms/feature-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 1024px) {
+  .rooms-kv-bg {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .rooms-cover-bg {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .feature-1-img {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .feature-2-img {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .feature-3-img {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.amenities-img-1,
+.amenities-img-2,
+.amenities-img-3 {
+  background-repeat: no-repeat;
+}
+
+.amenities-img-1 {
+  background-image: url(../images/rooms/amenities-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.amenities-img-2 {
+  background-size: cover;
+  background-position: center;
+}
+
+.amenities-img-3 {
+  background-size: cover;
+  background-position: center;
+}
+
+.reservation-bg {
+  background-image: url(../images/rooms/reservation-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* KV Fade animations (shared across rooms/services/plans) */
+.kv-fade-bg {
+  opacity: 0;
+  transition: opacity 5s ease;
+  will-change: opacity;
+}
+
+.kv-fade-bg.is-visible {
+  opacity: 1;
+}
+
+.kv-fade-overlay {
+  opacity: 0;
+  transition: opacity 5s ease;
+  will-change: opacity;
+}
+
+.kv-fade-overlay.is-visible {
+  opacity: 0.39;
+}
+
+@media (min-width: 1024px) {
+  .amenities-img-1 {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .amenities-img-2 {
+    width: 731.46px;
+    background-size: 109.4% 376%;
+    background-position: 0% 58%;
+  }
+
+  .amenities-img-3 {
+    width: 883px;
+    background-size: 125.5% 198.9%;
+    background-position: 52% 81%;
+  }
+
+  .reservation-bg {
+    background-size: 1594.7px 1063.5px;
+    background-position: -77.1px -374.7px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .amenities-bleed-left {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
+  }
+
+  .amenities-bleed-right {
+    width: 100vw;
+    max-width: none;
+    margin-right: calc(50% - 50vw);
+    margin-left: 0;
+  }
+
+  .amenities-img-2 {
+    width: 731.46px;
+    margin-left: 0;
+  }
+
+  .amenities-img-3 {
+    width: 883px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+/* ===========================
+   SERVICES PAGE STYLES
+   =========================== */
+
+.service-kv-img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-cover-img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* SP Image Windows - Sauna */
+.sauna-images-sp {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 343 / 490;
+}
+
+.sauna-main-window,
+.sauna-sub-window {
+  position: absolute;
+  overflow: hidden;
+}
+
+.sauna-main-window {
+  width: 57.65%;
+  height: 63.88%;
+  left: 0;
+  top: 0;
+}
+
+.sauna-main-sp-img {
+  position: absolute;
+  width: 228.3%;
+  height: 96.1%;
+  left: -32.92%;
+  top: -1.52%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.sauna-sub-window {
+  width: 56.48%;
+  height: 30.61%;
+  left: 43.44%;
+  top: 69.39%;
+}
+
+.sauna-sub-sp-img {
+  position: absolute;
+  width: 101.04%;
+  height: 195.68%;
+  left: -1.06%;
+  top: -36.93%;
+  object-fit: cover;
+  max-width: none;
+}
+
+/* SP Image Windows - Onsen */
+.onsen-images-sp {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 343 / 334;
+}
+
+.onsen-main-window,
+.onsen-sub-window {
+  position: absolute;
+  overflow: hidden;
+}
+
+.onsen-main-window {
+  width: 69.97%;
+  height: 72.34%;
+  left: 30.03%;
+  top: max(-47px, -14.07%);
+}
+
+.onsen-main-sp-img {
+  position: absolute;
+  width: 177.21%;
+  height: 117.39%;
+  left: -15.8%;
+  top: -28.19%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.onsen-sub-window {
+  width: 48.39%;
+  height: 34.73%;
+  left: 0;
+  top: 60%;
+}
+
+.onsen-sub-sp-img {
+  position: absolute;
+  width: 139.9%;
+  height: 133.5%;
+  left: -8.91%;
+  top: -25.45%;
+  object-fit: cover;
+  max-width: none;
+}
+
+/* SP Image Windows - Food */
+.food-images-sp {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 343 / 560;
+}
+
+.food-main-window,
+.food-sub-window {
+  position: absolute;
+  overflow: hidden;
+}
+
+.food-main-window {
+  width: 77.26%;
+  height: 54.36%;
+  left: 0;
+  top: 0;
+}
+
+.food-main-sp-img {
+  position: absolute;
+  width: 194.4%;
+  height: 112.8%;
+  left: -43.77%;
+  top: -10.67%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.food-sub-window {
+  width: 55.81%;
+  height: 30.79%;
+  left: 44%;
+  top: 59.11%;
+}
+
+.food-sub-sp-img {
+  position: absolute;
+  width: 173.1%;
+  height: 128%;
+  left: -43.69%;
+  top: -7.93%;
+  object-fit: cover;
+  max-width: none;
+}
+
+/* PC Image positioning */
+.sauna-main,
+.sauna-sub,
+.onsen-main,
+.onsen-sub,
+.food-main,
+.food-sub,
+.option-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.sauna-main-img,
+.sauna-sub-img,
+.onsen-main-img,
+.onsen-sub-img,
+.food-main-img,
+.food-sub-img,
+.option-img-inner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+}
+
+.option-img-inner-1 {
+  width: 488px;
+  height: 731px;
+  left: -55px;
+  top: -394px;
+  right: auto;
+  bottom: auto;
+}
+
+.option-img-inner-2 {
+  width: 670px;
+  height: 446px;
+  left: -215px;
+  top: -147px;
+  right: auto;
+  bottom: auto;
+}
+
+.option-img-inner-3 {
+  width: 333px;
+  height: 499.44px;
+  left: -15px;
+  top: -123px;
+  right: auto;
+  bottom: auto;
+}
+
+@media (max-width: 1023px) {
+  .option-img-inner-1,
+  .option-img-inner-2,
+  .option-img-inner-3 {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+  }
+
+  .option-img {
+    height: auto;
+    aspect-ratio: 304 / 256;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-kv-img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .service-cover-img {
+    width: 1440px;
+    height: 960px;
+    left: 0;
+    top: -110px;
+  }
+
+  .sauna-main-img {
+    width: 1228px;
+    height: 818px;
+    left: -202px;
+    top: -6px;
+  }
+
+  .sauna-sub-img {
+    width: 481px;
+    height: 722px;
+    left: -5px;
+    top: -136px;
+  }
+
+  .onsen-main-img {
+    width: 1361px;
+    height: 907px;
+    left: -451px;
+    top: -68px;
+  }
+
+  .onsen-sub-img {
+    width: 693px;
+    height: 462px;
+    left: -44px;
+    top: -88px;
+  }
+
+  .food-main-img {
+    width: 1189px;
+    height: 793px;
+    left: -267px;
+    top: -75px;
+  }
+
+  .food-sub-img {
+    width: 806px;
+    height: 537px;
+    left: -211px;
+    top: -24px;
+  }
+
+  .option-img-1 {
+    background-size: 569px 854px;
+    background-position: -150px -320px;
+  }
+
+  .option-img-2 {
+    background-size: 670px 446px;
+    background-position: -55px -147px;
+  }
+
+  .option-img-3 {
+    background-size: 348px 521px;
+    background-position: -15px -123px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .service-cover-img {
+    width: 100vw;
+    left: calc(50% - 50vw);
+  }
+}
+
+/* ===========================
+   PLANS PAGE STYLES
+   =========================== */
+
+.plans-kv-img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.plans-reservation-bg {
+  background-image: url(../images/reservation-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 175.16% 100%;
+  background-position: 35% 0%;
+}
+
+.plan-image-window {
+  position: relative;
+  overflow: hidden;
+  width: 343px;
+  height: 400px;
+}
+
+.plan-onsen-img,
+.plan-miyazaki-img {
+  position: absolute;
+  object-fit: cover;
+  max-width: none;
+}
+
+.plan-onsen-img {
+  width: 772.586px;
+  height: 515.121px;
+  left: -172.26px;
+  top: -96.449px;
+  right: auto;
+  bottom: auto;
+}
+
+.plan-miyazaki-img {
+  width: 764px;
+  height: 510px;
+  left: -172.26px;
+  top: -96.45px;
+  right: auto;
+  bottom: auto;
+}
+
+@media (min-width: 1024px) {
+  .plans-kv-img {
+    width: 1440px;
+    height: 960px;
+    left: 0;
+    top: -142px;
+  }
+
+  .plan-image-window {
+    width: 607.5px;
+    height: 700px;
+  }
+
+  .plan-image-window-onsen {
+    margin-left: 80px;
+  }
+
+  .plan-image-window-miyazaki {
+    margin-right: 80px;
+  }
+
+  .plan-onsen-img {
+    width: 1360px;
+    height: 907px;
+    left: -301px;
+    top: -171.5px;
+  }
+
+  .plan-miyazaki-img {
+    width: 1075px;
+    height: 716px;
+    left: -107.5px;
+    top: -0.5px;
+  }
+
+  .plans-reservation-bg {
+    background-size: 1594.7px 1063.5px;
+    background-position: -77.1px -374.7px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .plans-kv-img {
+    width: 100vw;
+    left: calc(50% - 50vw);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .plan-image-window {
+    width: 480px;
+    height: 560px;
+  }
+
+  .plan-image-window-onsen {
+    margin-left: 32px;
+  }
+
+  .plan-image-window-miyazaki {
+    margin-right: 32px;
+  }
+
+  .plan-onsen-img {
+    width: 1100px;
+    height: 733px;
+    left: -245px;
+    top: -130px;
+  }
+
+  .plan-miyazaki-img {
+    width: 900px;
+    height: 600px;
+    left: -90px;
+    top: -10px;
+  }
+
+  .plan-text-panel {
+    width: 520px;
+    height: 560px;
+  }
+
+  .plan-text-inner {
+    left: 48px;
+    top: 96px;
+    width: 420px;
+  }
+
+  .plan-text-desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/* ===========================
+   PRIVACY POLICY PAGE STYLES
+   =========================== */
+
+.policy-list-decimal {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+}
+
+.policy-list-circle {
+  list-style-type: circle;
+  padding-left: 1.25rem;
+}
+
+.policy-list-decimal li,
+.policy-list-circle li {
+  padding-left: 0.15rem;
+}
+
+@media (max-width: 1023px) {
+  .privacy-policy-section {
+    padding-top: calc(var(--header-height, 72px) + 80px);
+  }
+}

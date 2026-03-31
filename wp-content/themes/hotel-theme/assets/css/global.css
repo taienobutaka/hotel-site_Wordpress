@@ -1,0 +1,106 @@
+/* Global Styles for Hotel Site */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Room Gallery Scroll Utilities */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Text Shadow Utilities */
+.text-shadow-hero {
+  text-shadow: 0px -4px 8.6px rgba(0, 0, 0, 0.25);
+}
+
+/* Button Base Styles */
+.btn-reservation {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(67, 108, 94, 0.25);
+  height: 43px;
+  min-width: 139px;
+  background: #436c5e;
+  border: 1px solid #436c5e;
+  line-height: 22.75px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-reservation:hover {
+  background: white;
+  color: #436c5e;
+  border-color: #436c5e;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 25px rgba(67, 108, 94, 0.35);
+}
+
+.btn-reservation svg {
+  flex-shrink: 0;
+}
+
+.btn-reservation span {
+  white-space: nowrap;
+}
+
+/* Room section description text */
+.room-section .room-desc {
+  color: #483f38;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 1.6px;
+}
+
+@media (min-width: 1024px) {
+  .room-section .room-desc {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Header Styles */
+.sp-header {
+  display: block;
+}
+
+.pc-header {
+  display: none;
+}
+
+@media (min-width: 1301px) {
+  .sp-header {
+    display: none;
+  }
+
+  .pc-header {
+    display: block;
+  }
+}
+
+.header-gradient {
+  background-color: rgba(245, 239, 234, 0.1);
+}
+
+#mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#mobile-menu.is-open > div {
+  transform: translateY(0);
+}
+
+body.is-menu-open #fixed-reservation-btn {
+  display: none !important;
+}
