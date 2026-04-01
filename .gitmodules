@@ -1,0 +1,3 @@
+[submodule "hotel-site"]
+	path = hotel-site
+	url = git@github.com:taienobutaka/hotel-site.git
