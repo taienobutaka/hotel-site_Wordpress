@@ -1,0 +1,44 @@
+# ==============================
+# WordPress
+# ==============================
+
+# DB接続情報が含まれるため除外（wp-config-sample.php を元に各自作成）
+wp-config.php
+
+# アップロードメディア（DBデータと同様に環境依存）
+wp-content/uploads/
+
+# キャッシュ・一時ファイル
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# 第三者プラグイン（wp-admin > プラグインからインストール）
+wp-content/plugins/
+# ※ カスタム自作プラグインがある場合は個別に除外を解除:
+# !wp-content/plugins/my-custom-plugin/
+
+# ==============================
+# Node.js (hotel-site/)
+# ==============================
+node_modules/
+hotel-site/node_modules/
+hotel-site/dist/
+
+# ==============================
+# 環境設定
+# ==============================
+.env
+.env.local
+.env.*.local
+
+# ==============================
+# OS・エディタ
+# ==============================
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*.swo
