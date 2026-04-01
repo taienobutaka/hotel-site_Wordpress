@@ -32,56 +32,7 @@ WordPress 環境上で管理しつつ、フロントエンドは Astro で構築
 - `hotel-site/`
   - Astro プロジェクト（UI・ページ実装）
 
-## チーム開発でのセットアップ手順
-
-### 1. リポジトリをクローン
-
-```bash
-git clone https://github.com/taienobutaka/hotel-site_Wordpress.git wp01
-cd wp01
-```
-
-### 2. `wp-config.php` を作成
-
-`wp-config.php` はセキュリティ上リポジトリに含まれていません。  
-`wp-config-sample.php` をコピーして DB 接続情報を編集してください。
-
-```bash
-cp wp-config-sample.php wp-config.php
-```
-
-`wp-config.php` を開き、以下を自分の環境に合わせて書き換えます。
-
-```php
-define( 'DB_NAME',     'データベース名' );
-define( 'DB_USER',     'ユーザー名' );
-define( 'DB_PASSWORD', 'パスワード' );
-define( 'DB_HOST',     'localhost' );
-```
-
-### 3. WordPress のセットアップ
-
-1. XAMPP の Apache / MySQL を起動
-2. phpMyAdmin で DB を作成（DB名を上記と合わせる）
-3. `http://localhost/wp01` にアクセスしてインストールを完了
-
-> **Note**  
-> テーマは `wp-content/themes/hotel-theme/` に含まれています。  
-> インストール後、管理画面の「外観 > テーマ」で **hotel-theme** を有効化してください。
-
-> **Note**  
-> `wp-content/uploads/`（メディアファイル）は共有されていません。  
-> メディアが必要な場合は別途チームで共有してください。
-
-### 4. プラグインをインストール
-
-`wp-content/plugins/` はリポジトリに含まれていません。  
-管理画面の「プラグイン > 新規追加」から利用するプラグインをインストールしてください。
-
-代表的な使用プラグイン:
-- Advanced Custom Fields (ACF)
-
-### 5. Astro 側（`hotel-site/`）
+## ローカル起動
 
 ```bash
 cd hotel-site
